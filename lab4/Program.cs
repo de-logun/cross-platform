@@ -48,7 +48,7 @@
 
             if (string.IsNullOrEmpty(subcommand))
             {
-                Console.WriteLine("lab1 or lab2.");
+                Console.WriteLine("lab1, lab2 or lab3.");
                 subcommand = Console.ReadLine().ToLower();
             }
 
@@ -61,6 +61,9 @@
                         break;
                     case "lab2":
                         library.Class2.ProcessStrings();
+                        break;
+                    case "lab3":
+                        library.Class3.KingPath();
                         break;
                     default:
                         Console.WriteLine($"unknown subcommand");
