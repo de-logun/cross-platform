@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cros_lab1", "cros_lab1\cros_lab1.csproj", "{2817CB75-DEFE-4CF0-BCAC-7F97BF0FB92C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2817CB75-DEFE-4CF0-BCAC-7F97BF0FB92C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2817CB75-DEFE-4CF0-BCAC-7F97BF0FB92C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2817CB75-DEFE-4CF0-BCAC-7F97BF0FB92C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2817CB75-DEFE-4CF0-BCAC-7F97BF0FB92C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8BD040D9-8302-47CE-AD03-DEF6CBECEF2B}
+	EndGlobalSection
+EndGlobal
