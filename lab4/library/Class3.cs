@@ -1,16 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-
-namespace library
+﻿namespace library
 {
     public class Class3
     {
-        public static void KingPath()
+        public static void Lab3Execute(string inputFileName, string outputFileName)
         {
-            using (StreamReader reader = new StreamReader("INPUT3.TXT"))
-            using (StreamWriter writer = new StreamWriter("OUTPUT3.TXT"))
+            using (StreamReader reader = new StreamReader(inputFileName))
+            using (StreamWriter writer = new StreamWriter(outputFileName))
             {
                 string[] input = reader.ReadLine().Split();
                 int n = int.Parse(input[0]);

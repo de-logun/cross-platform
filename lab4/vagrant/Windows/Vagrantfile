@@ -1,0 +1,28 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+
+  config.vm.box = "gusztavvargadr/windows-10"
+ 
+  config.vm.box_check_update = false
+ 
+  # Створення машини з доступом до основної мережі хост-системи. Це треба для доступу до локального серверу з Nuget пакетами
+  config.vm.network "public_network"
+ 
+  config.vm.provider "virtualbox" do |vb|
+    vb.gui = true
+    end
+  
+  config.vm.provision "shell", privileged: true, inline: <<-SHELL
+    # Ensure PowerShell is set to use TLS1.2
+    [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+
+    # Install the .NET Core SDK
+    Invoke-WebRequest -OutFile dotnet-sdk-installer.exe https://download.visualstudio.microsoft.com/download/pr/xxx/xxx/dotnet-sdk-xxx-win-x64.exe
+    Start-Process -Wait -FilePath .\dotnet-sdk-installer.exe
+    Remove-Item dotnet-sdk-installer.exe
+  SHELL
+
+  
+end

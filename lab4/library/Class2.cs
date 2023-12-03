@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-
-namespace library
+﻿namespace library
 {
     public class Class2
     {
-        public static void ProcessStrings()
+        public static void Lab2Execute(string inputFilePath, string outputFilePath)
         {
-            string inputFilePath = "INPUT2.TXT";
-            string outputFilePath = "OUTPUT2.TXT";
+
             // Read input from the file
             string[] lines = File.ReadAllLines(inputFilePath);
             if (lines.Length != 2)

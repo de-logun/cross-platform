@@ -1,19 +1,17 @@
-﻿using System;
-using System.IO;
-
-namespace library
+﻿namespace library
 {
     public class Class1
     {
-        public static void Main()
+
+        public static void Lab1Execute(string inputFileName, string outputFileName)
         {
-            if (!File.Exists("INPUT1.TXT"))
+            if (!File.Exists(inputFileName))
             {
                 Console.WriteLine("Вхідний файл не знайдено.");
                 return;
             }
 
-            using (StreamReader reader = new StreamReader("INPUT1.TXT"))
+            using (StreamReader reader = new StreamReader(inputFileName))
             {
                 string line = reader.ReadLine();
 
@@ -68,7 +66,7 @@ namespace library
                     }
                 } while (NextPermutation(xArray));
 
-                using (StreamWriter writer = new StreamWriter("OUTPUT1.TXT"))
+                using (StreamWriter writer = new StreamWriter(outputFileName))
                 {
                     if (permutationFound)
                     {
