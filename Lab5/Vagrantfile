@@ -1,0 +1,43 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+
+    config.vm.box = "debian/bookworm64"
+   
+    config.vm.box_check_update = false
+   
+    config.vm.network "forwarded_port", guest: 3000, host: 3000
+   
+    config.vm.provision "shell", inline: <<-SHELL
+  
+      sudo apt-get update && apt-get upgrade -y
+      
+      wget https://packages.microsoft.com/config/debian/12/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+    
+      sudo dpkg -i packages-microsoft-prod.deb
+    
+      rm packages-microsoft-prod.deb
+  
+      sudo apt-get update && sudo apt-get install -y dotnet-sdk-7.0
+  
+      # Встановлення Git для подальшого клонування репозиторію
+  
+      sudo apt-get install -y git
+  
+      # Клонування репозиторію
+  
+      git clone https://github.com/de-logun/cross-platform.git
+  
+      # Переходимо до лаби 5
+  
+      cd cross-platform/lab5/RostikWebApp
+  
+      # Запускаємо
+  
+      dotnet run
+  
+  
+      SHELL
+   
+  end

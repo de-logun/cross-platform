@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>lab4appbyrostik</id>
+    <version>1.0.0</version>
+    <authors>lab4appbyrostik</authors>
+    <description>Package Description</description>
+    <packageTypes>
+      <packageType name="DotnetTool" />
+    </packageTypes>
+  </metadata>
+  <files>
+    <file src="C:\Users\Rosik\source\repos\TestLab\Lab4\lab4\obj\DotnetToolSettings.xml" target="tools\net7.0\any\DotnetToolSettings.xml" />
+    <file src="C:\Users\Rosik\source\repos\TestLab\Lab4\lab4\bin\Release\net7.0\publish\lab4appbyrostik.dll" target="tools\net7.0\any\lab4appbyrostik.dll" />
+    <file src="C:\Users\Rosik\source\repos\TestLab\Lab4\lab4\bin\Release\net7.0\publish\lab4appbyrostik.deps.json" target="tools\net7.0\any\lab4appbyrostik.deps.json" />
+    <file src="C:\Users\Rosik\source\repos\TestLab\Lab4\lab4\bin\Release\net7.0\publish\lab4appbyrostik.runtimeconfig.json" target="tools\net7.0\any\lab4appbyrostik.runtimeconfig.json" />
+    <file src="C:\Users\Rosik\source\repos\TestLab\Lab4\lab4\bin\Release\net7.0\publish\lab4appbyrostik.pdb" target="tools\net7.0\any\lab4appbyrostik.pdb" />
+    <file src="C:\Users\Rosik\source\repos\TestLab\Lab4\lab4\bin\Release\net7.0\publish\McMaster.Extensions.CommandLineUtils.dll" target="tools\net7.0\any\McMaster.Extensions.CommandLineUtils.dll" />
+    <file src="C:\Users\Rosik\source\repos\TestLab\Lab4\lab4\bin\Release\net7.0\publish\library.dll" target="tools\net7.0\any\library.dll" />
+    <file src="C:\Users\Rosik\source\repos\TestLab\Lab4\lab4\bin\Release\net7.0\publish\library.pdb" target="tools\net7.0\any\library.pdb" />
+  </files>
+</package>
