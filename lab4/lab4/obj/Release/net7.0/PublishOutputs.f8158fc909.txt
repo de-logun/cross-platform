@@ -1,8 +1,0 @@
-C:\Users\Rosik\source\repos\TestLab\Lab4\lab4\bin\Release\net7.0\publish\lab4appbyrostik.exe
-C:\Users\Rosik\source\repos\TestLab\Lab4\lab4\bin\Release\net7.0\publish\lab4appbyrostik.dll
-C:\Users\Rosik\source\repos\TestLab\Lab4\lab4\bin\Release\net7.0\publish\lab4appbyrostik.deps.json
-C:\Users\Rosik\source\repos\TestLab\Lab4\lab4\bin\Release\net7.0\publish\lab4appbyrostik.runtimeconfig.json
-C:\Users\Rosik\source\repos\TestLab\Lab4\lab4\bin\Release\net7.0\publish\lab4appbyrostik.pdb
-C:\Users\Rosik\source\repos\TestLab\Lab4\lab4\bin\Release\net7.0\publish\McMaster.Extensions.CommandLineUtils.dll
-C:\Users\Rosik\source\repos\TestLab\Lab4\lab4\bin\Release\net7.0\publish\library.dll
-C:\Users\Rosik\source\repos\TestLab\Lab4\lab4\bin\Release\net7.0\publish\library.pdb
